@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>GridSense AI</title>
+<script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+<style>
+body{font-family:Arial;background:#0f172a;color:white;text-align:center;padding:20px}
+.card{background:#1e293b;padding:20px;border-radius:15px;margin:20px auto;max-width:800px}
+</style>
+</head>
+<body>
+<h1 style='color:#38bdf8'>GridSense AI</h1>
+<h2>Electricity Demand Forecasting</h2>
+<div class='card'>
+<h3 style='color:#4ade80'>Project Running Successfully!</h3>
+<p>Backend Connected</p>
+<canvas id='c'></canvas>
+</div>
+<script>
+new Chart(document.getElementById('c'),{type:'line',data:{labels:['Jan','Feb','Mar','Apr','May','Jun'],datasets:[{label:'Demand',data:[12,19,8,15,22,18],borderColor:'#38bdf8'}]}});
+</script>
+</body>
+</html>
